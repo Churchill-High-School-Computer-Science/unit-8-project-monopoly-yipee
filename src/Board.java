@@ -73,5 +73,18 @@ public class Board {
         propertiesMap.put(29, propers[1][10]);
         propers[0][10] = new Property("Go to Jail", new Color(0, 1, 0));
         propertiesMap.put(30, propers[0][10]);
+        propers[0][9] = new Property("Pacific Avenue", "board", 300, 26, 0, 200, new Color(51, 153, 51));
+        propertiesMap.put(31, propers[0][9]);
+        propers[0][8] = new Property("North Carolina Avenue", "board", 300, 26, 0, 200, new Color(51, 153, 51));
+        propertiesMap.put(32, propers[0][8]);
+        propers[0][7] = new Property("Community Chest", new Color(0, 255, 0));
+        propertiesMap.put(33, propers[0][7]);
+        propers[0][6] = new Property("Pennsylvania Avenue", "board", 320, 28, 0, 200, new Color(51, 153, 51));
+        propertiesMap.put(34, propers[0][6]);
+        propers[0][5] = new Property("Short Line Railroad", "board", 200, 25, 0, new Color(0, 0, 0));
+        propertiesMap.put(35, propers[0][5]);
+        propers[0][4] = new Property("Chance", new Color(0, 255, 0));
+        propertiesMap.put(36, propers[0][4]);
+        propers[0][6] = new Property("Park Place", "board", 350, 35, 0, 200, new Color(51, 153, 51));
     }
 }
