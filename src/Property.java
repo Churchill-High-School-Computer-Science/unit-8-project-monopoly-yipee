@@ -34,7 +34,12 @@ public class Property {
     public Property(String name, Color color){
         this.name = name;
         this.color = color;
+    }
 
+    public Property(String name, int rent, Color color){
+        this.name = name;
+        this.rent = rent;
+        this.color = color;
     }
     //TODO fix
     public Color getColor(){

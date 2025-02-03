@@ -85,6 +85,11 @@ public class Board {
         propertiesMap.put(35, propers[0][5]);
         propers[0][4] = new Property("Chance", new Color(0, 255, 0));
         propertiesMap.put(36, propers[0][4]);
-        propers[0][6] = new Property("Park Place", "board", 350, 35, 0, 200, new Color(51, 153, 51));
+        propers[0][3] = new Property("Park Place", "board", 350, 35, 0, 200, new Color(51, 153, 51));
+        propertiesMap.put(37, propers[0][3]);
+        propers[0][2] = new Property("Luxury Tax", 75, new Color(0, 255, 0));
+        propertiesMap.put(38, propers[0][2]);
+        propers[0][1] = new Property("Boardwalk", "board", 400, 50, 0, 200, new Color(51, 153, 51));
+        propertiesMap.put(39, propers[0][1]);
     }
 }
