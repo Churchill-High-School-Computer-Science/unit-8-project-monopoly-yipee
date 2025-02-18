@@ -155,7 +155,22 @@ public class Display extends JFrame {
                     if(player.getProperties() != null && !player.getProperties().isEmpty()){
                         for(Property property : player.getProperties()){
                             g2d.setColor(property.getColor());
-                            g2d.fillRect((int)(squareLength * 2) + playerOffset, squareLength * 4 + propertyOffset, squareLength, squareLength / 4);
+                            g2d.fillRect((int)(squareLength * 2) + playerOffset, squareLength * 4 + propertyOffset, squareLength * 2, squareLength / 4);
+
+                            // Draw property name
+                            g2d.setColor(Color.WHITE);
+                            g2d.drawString(property.getName(), squareLength * 2 + playerOffset, squareLength * 4 + propertyOffset + squareLength / 5);
+
+                            propertyOffset += (int)(squareLength / 3.75);
+                        }
+
+                       
+                    }
+
+                    if(player.getMortgages() != null && !player.getMortgages().isEmpty()){
+                        for(Property property : player.getMortgages()){
+                            g2d.setColor(new Color(100, 100, 100));
+                            g2d.fillRect((int)(squareLength * 2) + playerOffset, squareLength * 4 + propertyOffset, squareLength * 2, squareLength / 4);
 
                             // Draw property name
                             g2d.setColor(Color.WHITE);
